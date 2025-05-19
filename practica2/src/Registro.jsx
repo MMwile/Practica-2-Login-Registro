@@ -1,6 +1,6 @@
 import React from "react";
 
-const Registro = () => {
+const Registro = ({setPantalla}) => {
   return (
     <form>
       <h1>Registrarse</h1>
@@ -26,7 +26,7 @@ const Registro = () => {
       </div>
 
       <div>
-        <label htmlFor="register-password">Contraseña:</label>
+        <label htmlFor="Contraseña">Contraseña:</label>
         <input
           type="password"
           id="registroContraseña"
@@ -35,6 +35,33 @@ const Registro = () => {
         />
       </div>
 
+      <div>
+        <label htmlFor="DNI">DNI:</label>
+        <input
+          type="text"
+          id="registroDNI"
+          name="dni"
+          placeholder="0000-0000-00000"
+        />
+      </div>
+            <div>
+        <label htmlFor="NumeroColaborador">Número de colaborador:</label>
+        <input
+          type="text"
+          id="registroNumColaborador"
+          name="numeroColaborador"
+          placeholder="0000000"
+        />
+      </div>
+              <p>
+        ¿Ya tienes una cuenta?{" "}
+        <span
+          onClick={() => setPantalla("login")}
+          style={{ color: "blue", cursor: "pointer", textDecoration: "underline" }}
+        >
+          Iniciar Sesión
+        </span>
+        </p>
       <button type="submit">Registrarse</button>
     </form>
   );

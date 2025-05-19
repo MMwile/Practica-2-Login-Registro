@@ -10,7 +10,7 @@ const App = () => {
   const getPantalla = () => {
     switch(pantalla) {
       case "registro":
-        return <Registro/>;
+        return <Registro setPantalla={setPantalla} />;
       case 'login':
         return <Login setPantalla={setPantalla} />
       }

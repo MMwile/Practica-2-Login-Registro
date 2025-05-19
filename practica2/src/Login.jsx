@@ -20,7 +20,7 @@ const Login = ({setPantalla}) => {
       <div>
         <label>Contraseña:</label>
         <input
-          type="text"
+          type="password"
           id="contraseña"
           name="contraseña"
           placeholder="Contraseña"
